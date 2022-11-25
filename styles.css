@@ -24,19 +24,19 @@ body {
 main {
     flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 header>h1 {
     color: var(--text-color);
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: var(--secondary-font);
     padding: 2rem 1rem;
 }
 
 main>.part_01,
 main>.part_02 {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -52,10 +52,12 @@ main>.part_02 {
 main>.part_01>h2,
 main>.part_02>h2 {
     padding: 1rem;
+    font-size: 3rem;
 }
 
 main>.part_01>ul,
 main>.part_02>ul {
     margin-left: 2rem;
     padding: 1rem;
+    font-size: 1.5rem;
 }
